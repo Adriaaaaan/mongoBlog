@@ -21,6 +21,7 @@
     "url": "https://github.com/Adriaaaaan/mongoBlog/issues"
   },
   "dependencies": {
-    "mongodb": "~1.4.28"
+    "mongodb": "~1.4.28",
+    "express": "~4.10.7"
   }
 }

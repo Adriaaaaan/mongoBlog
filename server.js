@@ -1,5 +1,14 @@
 var MongoClient = require('mongodb').MongoClient;
+var express = require('express')
+    app = express();
+var port = 8080;
 
+app.get('/',function(req,res){
+	res.send("hello world");
+});
+app.get('*',function(req,res){
+res.status(404).send("Page not found :(");
+})
 MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
     if(err) throw err;
 
@@ -19,4 +28,5 @@ MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
     });
 
 });
-
+app.listen(port);
+console.log("Started on port "+port)
