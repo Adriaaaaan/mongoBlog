@@ -1,0 +1,26 @@
+{
+  "name": "mongoBlog",
+  "version": "0.0.0",
+  "description": "A simple blog using mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adriaaaaan/mongoBlog.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Adrian Meredith",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Adriaaaaan/mongoBlog/issues"
+  },
+  "dependencies": {
+    "mongodb": "~1.4.28"
+  }
+}
